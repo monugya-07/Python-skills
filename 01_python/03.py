@@ -18,5 +18,5 @@ age = age+1
 print(age)
 
 r = int(input("Enter the radius of the circle: "))
-area = 3.14 * r * r
+area = 3.14 * r ** 2
 print("The area of the circle : ", area)
