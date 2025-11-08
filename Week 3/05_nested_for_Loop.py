@@ -10,7 +10,7 @@ for i in range(7):
 print(c)
 
 
-# Find all the numbers less than the entered number 
+# Find all the prime numbers less than the entered number 
 
 n = int(input("Enter a number : "))
 
@@ -66,5 +66,6 @@ while(word != '-1'):
             maxLen = count
         word = input("Enter a word : ")
 print("The length of longest word is %s" %maxLen)
+
 
 
