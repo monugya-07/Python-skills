@@ -18,7 +18,7 @@ if n >=2 :
     print(2, end=' ')
 for i in range(3, n):
     flag = False
-    for i in range(2, i):
+    for j in range(2, i):
         if i % j == 0 : 
             flag = False
             break
@@ -66,4 +66,5 @@ while(word != '-1'):
             maxLen = count
         word = input("Enter a word : ")
 print("The length of longest word is %s" %maxLen)
+
 
