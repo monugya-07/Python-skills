@@ -1,22 +1,22 @@
 # break, continue and pass
 
-# email = input()
+email = input()
 
-# for i in email:                     
-#     if i == "@":
-#         break
-#     # print(i)
-#     print(i, end = '')              # xyz123
+for i in email:                     
+    if i == "@":
+        break                       # break after @, suppose xyz123@google.com
+    # print(i)
+    print(i, end = '')              # xyz123
 
 
 
-# email = input()
+email = input()
 
-# for i in email:
-#     if i == "@":
-#         continue
-#     # print(i)
-#     print(i, end = '')              # xyz123google.com
+for i in email:
+    if i == "@":
+        continue
+    # print(i)
+    print(i, end = '')              # xyz123google.com
 
 
 # What is pass?
@@ -43,3 +43,4 @@ if num > 0:
     pass                             # Placeholder for future code
 else:
     print("Negative number")
+
