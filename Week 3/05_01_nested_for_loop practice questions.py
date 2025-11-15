@@ -141,3 +141,80 @@ for i in range(rows):
     for j in range(cols):
         print((i + j) % 2, end="")
     print()
+
+
+
+# Level 2 nested loops
+
+# *****
+# *   *
+# *   *
+# *   *
+# *****
+
+rows = 5
+cols = 5
+
+for i in range(rows):
+    for j in range(cols):
+        if i == 0 or i == rows-1 or j == 0 or j == cols - 1:
+            print("*", end = "")
+        else:
+            print(" ", end="")
+    print()
+
+
+#     *
+#    **
+#   ***
+#  ****
+# *****
+
+for i in range(1, 6):
+    for j in range(1,6-i):
+        print(" ", end="")
+    for k in range(1,i+1):
+        print("*", end="")
+    print()
+
+
+# 12345
+# 1234
+# 123
+# 12
+# 1
+
+for i in range(1,6):
+    for j in range(1,6-i+1):
+        print(j, end="")
+    print()
+
+
+# *****
+#  ****
+#   ***
+#    **
+#     *
+
+for i in range(1,6):
+    for j in range(1,i+1):
+        print(" ", end='')
+    for k in range(1,6-i+1):
+        print("*", end="")
+    print()
+
+
+#     *
+#    ***
+#   *****
+#  *******
+# *********
+
+n = int(input())
+
+for i in range(1, n + 1):
+    for j in range(1, n-i+1):
+        print(" ", end="")
+    for k in range(2*i - 1):
+        print("*", end="")
+    print()
