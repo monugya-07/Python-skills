@@ -217,4 +217,88 @@ for i in range(1, n + 1):
         print(" ", end="")
     for k in range(2*i - 1):
         print("*", end="")
+
+    print()
+
+
+
+# 1
+# 01
+# 101
+# 0101
+# 10101
+
+for i in range(1,6):
+    for j in range(1, i+1):
+        if (i+j)%2==0:
+            print(1, end="")
+        else:
+            print(0, end="")
+    print()
+
+
+# Pascal's triangle
+
+# 1
+# 11
+# 121
+# 1331
+# 14641
+
+n = 5
+
+for i in range(n):
+    num = 1
+    for j in range(i + 1):
+        print(num, end="")
+        num = num * (i - j) // (j + 1)    # Pascal's formula
+    print()
+
+
+# Floyd’s Triangle
+
+# 1
+# 2 3
+# 4 5 6
+# 7 8 9 10
+
+n = 4
+num = 1
+
+for i in range(1, n + 1):
+    for j in range(i):
+        print(num, end=" ")
+        num += 1
+    print()
+
+
+# A
+# AB
+# ABC
+# ABCD
+# ABCDE
+
+for i in range(1, 6):
+    for j in range(i):
+        print(chr(65 + j), end="")
+    print()
+
+
+
+# Hollow Triangle
+
+# *
+# **
+# * *
+# *  *
+# *****
+
+n = 5
+
+for i in range(1, n+1):
+    for j in range(1, i+1):
+        if i == 1 or j == 1 or j == i or i == n:             # First row OR first column OR last column OR last row
+            print("*", end="")
+        else:
+            print(" ", end="")
     print()
