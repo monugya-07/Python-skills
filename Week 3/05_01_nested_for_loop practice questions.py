@@ -387,3 +387,87 @@ for i in range(1, n+1):
     for j in range(i-2, -1, -1):
         print(x-2-j, end="")
     print()
+
+
+
+# nested loops ( for + while )
+
+# Print a rectangle using while → for
+
+i = 1
+while i <= 5:          
+    for j in range(5): 
+        print("*", end="")
+    print()
+    i += 1
+
+
+
+# while loop inside for loop (for → while)
+
+for i in range(1, 6):   
+    j = 1
+    while j <= i:      
+        print("*", end="")
+        j += 1
+    print()
+
+
+
+# 1111
+# 2222
+# 3333
+# 4444
+
+i = 1
+while i <= 4:
+    for j in range(4):
+        print(i, end="")
+    print()
+    i += 1
+
+
+
+# *****
+# ****
+# ***
+# **
+# *
+
+i = 5
+while i >= 1:
+    for j in range(i):
+        print("*", end="")
+    print()
+    i -= 1
+
+
+
+# 1
+# 12
+# 123
+# 1234
+
+for i in range(1, 5):
+    j = 1
+    while j <= i:
+        print(j, end="")
+        j += 1
+    print()
+
+
+
+# 1
+# 1 3
+# 1 3 5
+# 1 3 5 7
+
+for i in range(1, 5):
+    j = 1
+    count = 1
+    while count <= i:
+        print(j, end=" ")
+        j += 2
+        count += 1
+    print()
+
