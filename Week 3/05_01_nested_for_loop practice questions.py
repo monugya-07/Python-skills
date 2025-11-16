@@ -302,3 +302,88 @@ for i in range(1, n+1):
         else:
             print(" ", end="")
     print()
+
+
+
+# Level 3
+
+
+# *        *
+# **      **
+# ***    ***
+# ****  ****
+# **********
+# ****  ****
+# ***    ***
+# **      **
+# *        *
+
+n = 5
+for i in range(1, n+1):
+    print("*"*i + " "*(2*(n-i)) + "*"*i)
+
+for i in range(n-1, 0, -1):
+    print("*"*i + " "*(2*(n-i)) + "*"*i)
+
+
+
+#     A     
+#    ABA    
+#   ABCBA   
+#  ABCDCBA  
+# ABCDEDCBA 
+
+n = 5
+for i in range(1, n+1):
+    print(" "*(n-i), end="")
+    for j in range(1, i+1):
+        print(chr(64+j), end="")
+    for j in range(i-1, 0, -1):
+        print(chr(64+j), end="")
+    print()
+
+
+
+#    *      
+#   * *     
+#  *   *    
+# *     *   
+#  *   *    
+#   * *     
+#    *
+ 
+n = 4
+
+for i in range(1, n+1):
+    print(" "*(n-i), end="")
+    if i == 1:
+        print("*")
+    else:
+        print("*" + " "*(2*i-3) + "*")
+
+for i in range(n-1, 0, -1):
+    print(" "*(n-i), end="")
+    if i == 1:
+        print("*")
+    else:
+        print("*" + " "*(2*i-3) + "*")
+
+
+
+# 1
+# 232
+# 34534
+# 4567456
+
+
+n = 4
+start = 1
+
+for i in range(1, n+1):
+    x = i
+    for j in range(i):
+        print(x, end="")
+        x += 1
+    for j in range(i-2, -1, -1):
+        print(x-2-j, end="")
+    print()
