@@ -1,3 +1,6 @@
+# Dot product 
+
+
 # import random
 
 # l = [1,3,4,67,18,17]
