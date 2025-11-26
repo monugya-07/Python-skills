@@ -37,10 +37,10 @@ print(C)
 
 
 
-# Multiplication of matrix, It multiplies the numbers but this is not the way
+# Multiplication of matrix, It multiplies the numbers but this is not the way 
 
 for i in range(dim):
     for j in range (dim):
-        C[i][j] = A[i][j] * B[i][j]
+        C[i][j] = A[i][j] * B[i][j]       
 print(C)
 
